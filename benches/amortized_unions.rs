@@ -11,7 +11,7 @@ fn sum_bench(c: &mut Criterion) -> &mut Criterion {
 
             for k in 0..10_000 {
                 let mut node = Repr::new(k);
-                root.union(&mut root);
+                root.union(&mut node);
                 _nodes.push(node);
             }
         })
