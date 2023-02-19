@@ -7,3 +7,10 @@ edition = "2021"
 doctest = false
 
 [dependencies]
+
+[dev-dependencies]
+criterion = "0.4.*"
+
+[[bench]]
+name = "amortized_unions"
+harness = false
